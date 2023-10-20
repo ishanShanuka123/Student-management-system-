@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg2"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/wewewew"
+        android:layout_width="316dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="8sp"
+        android:text="NIBM StudentConnect"
+        android:textAlignment="center"
+        android:textColor="@color/Darkblue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dddsds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_editor_absoluteX="164dp"
+        app:layout_editor_absoluteY="79dp" />
+
+    <TextView
+        android:id="@+id/dddsds"
+        android:layout_width="230dp"
+        android:layout_height="57dp"
+        android:text="Registration"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wewewew"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="236dp"
+        android:layout_height="37dp"
+        android:background="@drawable/inputbg"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/txtemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dddsds"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_editor_absoluteX="84dp"
+        app:layout_editor_absoluteY="269dp" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="236dp"
+        android:layout_height="37dp"
+        android:background="@drawable/inputbg"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/txtpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtname"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_editor_absoluteX="84dp"
+        app:layout_editor_absoluteY="269dp" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="236dp"
+        android:layout_height="37dp"
+        android:background="@drawable/inputbg"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtemail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561"
+        app:layout_editor_absoluteX="42dp"
+        app:layout_editor_absoluteY="344dp" />
+
+
+    <EditText
+        android:id="@+id/txtpass2"
+        android:layout_width="236dp"
+        android:layout_height="37dp"
+        android:background="@drawable/inputbg"
+        android:ems="10"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpassword"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_editor_absoluteX="42dp"
+        app:layout_editor_absoluteY="344dp" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="288dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Register"
+        android:textColor="@color/material_dynamic_neutral0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859" />
+
+    <TextView
+        android:id="@+id/txtacc"
+        android:layout_width="182dp"
+        android:layout_height="43dp"
+        android:text="Already Have An account"
+        android:textAlignment="center"
+        android:textColor="@color/Pink"
+        android:textColorLink="#DC1A1A"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
